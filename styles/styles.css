@@ -109,7 +109,7 @@ main {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
 }
 
 #about-me {
@@ -178,16 +178,16 @@ main {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #121212; /* Ensure this color is being applied */
+    background-color: #121212;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Ensure text is centered */
+    text-align: center;
 }
 
 .bot:last-child {
-    margin-bottom: 60px; /* Adjust this value to increase or decrease the distance */
+    margin-bottom: 60px;
 }
 
 .bot h3 {
