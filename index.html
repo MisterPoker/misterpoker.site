@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Poker</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <div class="top-left">
+                <p>𝐌𝐫 𝐏𝐨𝐤𝐞𝐫</p>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#about-me">درباره من</a></li>
+                    <li><a href="#my-bots">ربات‌های من</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about-me" style="direction: rtl;">
+            <div class="profile-photo">
+                <img src="./assets/images/img.jpg" alt="Profile Photo" draggable="false">
+            </div>
+            
+            <h2>سلام! مانی هستم ...</h2>
+            <p>برنامه نویسی رو از ربات های دیسکورد شروع کردم و الان بیشتر از سه ساله که برنامه نویسی میکنم 😀</p>
+        </section>
+        
+        <section id="my-bots" class="expanded-section" style="direction: rtl;">
+            <h2>نمونه‌کار های من :</h2>
+            <div class="bot">
+                <h3>ربات پیام محرمانه</h3>
+                <p>این ربات طراحی شده تا شما بتونید هر چیزی که می‌خواید به من بگید، بدون اینکه بدونم کی، چی به من گفته!</p>
+                <a href="https://t.me/MisterPokerSecretMessageBot" target="_blank">لینک به ربات پیام محرمانه</a>
+            </div>
+            <div class="bot">
+                <h3>ربات مترجم آنلاین</h3>
+                <p>این ربات کلی زبان برای ترجمه هر متنی داره، فقط کافیه براش یه متن تایپ کنی تا ادامش رو خودت ببینی!</p>
+                <a href="https://t.me/Homa_Translate_Bot" target="_blank">لینک به ربات مترجم</a>
+            </div>
+            <div class="bot">
+                <h3>ربات تاس</h3>
+                <p>این ربات با استفاده از ایموجی های تلگرام به شما این اجازه رو میده تا بازی کنید و امتیاز جمع آوری کنید!</p>
+                <a href="https://t.me/Homa_Dice_Bot" target="_blank">لینک به ربات تاس</a>
+            </div>
+            <div class="bot">
+                <h3>سایت کوتاه کننده لینک</h3>
+                <p>این وبسایت به شما این اجازه رو میده تا با چند کلیک کوچیک، لینک بلندتون رو به یه لینک کوتاه تبدیل کنید!</p>
+                <a href="https://misterpoker.site/404" target="_blank">لینک به سایت ترجمه</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-social-icons" style="direction: ltr;">
+            <a href="https://t.me/mrpker"><i class="fab fa-telegram"></i></a>
+            <a href="https://instagram.com/mnipv_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/MisterPoker" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/users/625881588638416934" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="mailto:mrpkerrr@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; CopyRight 2024 | All Rights Reserved</p>
+        <p>Made with ❤️ by MANI :)</p>
+    </footer>
+    
+    <script>
+        $(window).on('load', function() {
+            $('#loader').fadeOut('slow', function() {
+                $('main').fadeIn();
+            });
+        });
+
+        $('.menu-toggle').click(function() {
+            $('header').toggleClass('expanded');
+            $('.dropdown-menu').slideToggle();
+        });
+    </script>
+</body>
+</html>
